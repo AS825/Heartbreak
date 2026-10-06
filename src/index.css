@@ -1,0 +1,73 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Fredoka', ui-rounded, system-ui, sans-serif;
+  --font-body: 'Nunito', ui-rounded, system-ui, sans-serif;
+  --color-ink: #3b2f3a;
+  --color-ink-soft: #7a6a78;
+  --color-cream: #fff6ee;
+  --color-coral: #f27c6a;
+  --color-coral-dark: #d9614f;
+  --color-mint: #7cc6a0;
+  --color-sun: #ffc65c;
+  --color-lilac: #b9a3e3;
+  --color-line: #f0e0d6;
+  --animate-pop: pop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+  --animate-float: float 4s ease-in-out infinite;
+  --animate-fade-up: fade-up 0.4s ease-out both;
+  --animate-wiggle: wiggle 0.6s ease-in-out;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+@keyframes fade-up {
+  from { transform: translateY(12px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(-8deg) scale(1.1); }
+  75% { transform: rotate(8deg) scale(1.1); }
+}
+@keyframes burn {
+  0% { opacity: 1; filter: blur(0); transform: translateY(0); }
+  100% { opacity: 0; filter: blur(6px); transform: translateY(-40px) scale(0.9); }
+}
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgb(242 124 106 / 0.55); }
+  100% { box-shadow: 0 0 0 16px rgb(242 124 106 / 0); }
+}
+
+html, body {
+  background: #fde9dc;
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+.burn { animation: burn 1.2s ease-in forwards; }
+.pulse-ring { animation: pulse-ring 1.6s ease-out infinite; }
+
+/* Organische Blob-Formen für den verspielten Look */
+.blob {
+  border-radius: 42% 58% 63% 37% / 41% 44% 56% 59%;
+}
+
+input[type='range'] {
+  accent-color: var(--phase-accent, var(--color-coral));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

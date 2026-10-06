@@ -143,7 +143,7 @@ Ein Phasenwechsel wird vorgeschlagen, wenn **alle** Bedingungen erfüllt sind; d
 ### Rückstufung (ohne Bestrafung)
 
 - **Schutzmodus (tagesweise):** Check-in ≤ 2 → heute nur Phase-1-Inhalte (Atem, Wasser, Hilfe-Hinweis). Phase bleibt. Kein Text à la „schlechter Tag“.
-- **Phasen-Rückschritt (Vorschlag):** 3 der letzten 4 Check-ins liegen ≥ 2 Punkte unter der Aufstiegsschwelle der aktuellen Phase **oder** Gefühls-Chip „Fühlt sich an wie am Anfang“ → Angebot: „Wollen wir ein paar Tage einen Gang runterschalten?“
+- **Phasen-Rückschritt (Vorschlag):** 3 der letzten 4 Check-ins (seit Beginn der Etappe) liegen ≥ 2 Punkte unter der Schwelle, mit der man diese Etappe betreten hat (z. B. Phase 3: Einstieg bei Ø 5 → Check-ins ≤ 3) **oder** Gefühls-Chip „Fühlt sich an wie am Anfang“ → Angebot: „Wollen wir ein paar Tage einen Gang runterschalten?“
 - Bei Rückschritt bleibt alles erhalten: Garten, Sammlung, Meilensteine, freigeschaltete Empfehlungen. Die Landkarte zeigt den Weg als Schleife, nicht als Absturz („Wege sind selten gerade.“).
 - Trigger-Ereignis optional im Check-in: Chip „Kontakt mit Ex gehabt“ → nächste Übung aus Pool `after_contact`, keine Phasenänderung.
 
@@ -328,7 +328,7 @@ Bedingungen zählen nur Aktivität (Check-ins **gesamt**, nicht in Folge; Übung
 
 - Schwebender, kleiner Button unten rechts (♡), auf jedem Screen inkl. Onboarding.
 - Bottom-Sheet: **Telefonseelsorge 142** (Österreich, 0–24 Uhr, kostenlos), Anruf-Link `tel:142`, 60-Sekunden-Atemübung, Satz: „Du musst das nicht allein schaffen.“
-- Nummern in `help.json` pro Region, weil 142 nur in Österreich gilt (DE: 0800 111 0 111 / 0800 111 0 222, CH: 143). Draft-Default: AT.
+- Zielregion: **nur Österreich** (entschieden). Nummern in `help.json`: TelefonSeelsorge 142, Rat auf Draht 147 (nur bei Altersgruppe „unter 20“), Rettung 144.
 - Im Schutzmodus und bei Onboarding-Stimmung ≤ 2 wird der Button einmal sanft hervorgehoben (Puls, kein Popup).
 
 ---
@@ -354,7 +354,7 @@ Bedingungen zählen nur Aktivität (Check-ins **gesamt**, nicht in Folge; Übung
 Content im Draft: je Phase ca. 5–6 Übungen, 3–4 Habit-Vorlagen, 1–2 Empfehlungen, 3 Selbst-Dates, 3 Treats.
 
 ### Später
-Sammlung als eigener Tab (im Draft: einfache Liste unter „Mein Weg“), Reflection-Zeitleiste & volles Abschluss-Ritual, Erinnerungen/Push, Einstellungen, Firebase-Adapter, echte Affiliate-Links, Illustrationen statt Platzhalter-Emoji.
+Reflection-Zeitleiste ausbauen, Erinnerungen/Push, Einstellungen, Firebase-Adapter, echte Affiliate-Links, Illustrationen statt Platzhalter-Emoji.
 
 ---
 
@@ -386,7 +386,6 @@ content/          *.json (siehe Abschnitt 5)
 
 ## 10. Offene Fragen
 
-1. Zielregion: Nur Österreich (142) oder AT/DE/CH mit Auswahl?
-2. Soll die Person ihre Phase im „Mein Weg“-Screen auch manuell wechseln dürfen (Vorschlag: ja, mit kurzer Rückfrage)?
-3. Visueller Stil: illustriert/verspielt (Garten im Aquarell-Look) oder ruhig-minimal?
-4. Wie viel Kontakt-Thematik (No-Contact-Unterstützung) soll in den Draft?
+Entschieden: nur Österreich · verspielter Stil · manueller Phasenwechsel in „Mein Weg“ (mit Rückfrage).
+
+Noch offen: Wie viel Kontakt-Thematik (No-Contact-Unterstützung) soll über den Chip „Hatte Kontakt mit Ex“ + Pool `after_contact` hinaus rein?
