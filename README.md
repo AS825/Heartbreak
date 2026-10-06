@@ -15,6 +15,18 @@ npm test           # Logik- und Content-Tests
 npm run build      # statischer Build in dist/ (läuft auf jedem Static-Hosting)
 ```
 
+## Online zeigen (Firebase Hosting)
+
+Live-Adresse: **https://heartbreak-effdf.web.app**
+
+- **Automatisch:** Jeder Push auf `main` testet, baut und deployt über `.github/workflows/deploy.yml`.
+  Einmalig nötig: GitHub-Secret `FIREBASE_SERVICE_ACCOUNT_HEARTBREAK_EFFDF` (siehe unten).
+- **Manuell vom eigenen Rechner:** `npx firebase-tools login` (einmalig), dann `npm run deploy`.
+
+Secret einrichten (einmalig): `npx firebase-tools init hosting:github` im Projektordner ausführen,
+Repo `AS825/Heartbreak` angeben. Das legt das Service-Konto an und speichert das Secret in GitHub.
+Die Fragen nach Build-Skript und automatischem Deploy mit **Nein** beantworten – der Workflow existiert schon. Legt das Tool trotzdem neue Dateien unter `.github/workflows/` an, diese einfach nicht committen.
+
 ## Was drin ist
 
 | Bereich | Inhalt |
