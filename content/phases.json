@@ -1,0 +1,86 @@
+{
+  "phases": [
+    {
+      "id": 1,
+      "key": "schock",
+      "title": "Erstmal atmen",
+      "subtitle": "Phase 1 · Schock",
+      "emoji": "🌧️",
+      "landscape": "Nebelwald",
+      "humorLevel": 0,
+      "theme": { "bg": "#EEE7F3", "accent": "#8E7BB5", "soft": "#F7F3FA" },
+      "description": "Gerade ist alles zu viel. Hier geht es nur darum, gut durch den Tag zu kommen.",
+      "helps": ["Wasser trinken", "Kurz raus", "Schlafen, so gut es geht", "Nicht alles allein tragen"],
+      "exercisePools": ["breath", "grounding", "self_care_micro"],
+      "habitTemplates": ["water", "outside_5min", "sleep_time", "eat_warm"],
+      "recommendations": ["book_wolf_partner_geht"],
+      "workshops": [],
+      "advance": { "minDays": 5, "minAvgMood": 4.0, "require": { "checkins": 4, "exercises": 3 } }
+    },
+    {
+      "id": 2,
+      "key": "gefuehle",
+      "title": "Alles darf raus",
+      "subtitle": "Phase 2 · Gefühle",
+      "emoji": "🌦️",
+      "landscape": "Regenwiese",
+      "humorLevel": 2,
+      "theme": { "bg": "#FDE4DC", "accent": "#E0715A", "soft": "#FFF3EE" },
+      "description": "Wut, Trauer, Vermissen – alles gleichzeitig, manchmal im Fünf-Minuten-Takt. Das ist normal und es darf sein.",
+      "helps": ["Gefühle aufschreiben statt runterschlucken", "Ehrliche Top-5-Listen", "Freundlich mit dir selbst reden"],
+      "exercisePools": ["top5", "vent", "inner_child", "grief", "self_worth"],
+      "habitTemplates": ["water", "move_10min", "message_friend", "sleep_time"],
+      "recommendations": ["book_stahl_kind", "book_hornby_hifi"],
+      "workshops": [],
+      "advance": { "minDays": 10, "minAvgMood": 5.0, "require": { "checkins": 6, "pools": { "top5": 2, "inner_child": 1 } } }
+    },
+    {
+      "id": 3,
+      "key": "neuorientierung",
+      "title": "Neue Wege",
+      "subtitle": "Phase 3 · Neuorientierung",
+      "emoji": "⛅",
+      "landscape": "Lichtung",
+      "humorLevel": 3,
+      "theme": { "bg": "#DDF1E4", "accent": "#3E9B6B", "soft": "#F0FAF3" },
+      "description": "Langsam wird Platz frei. Zeit herauszufinden, was du eigentlich willst – nur für dich.",
+      "helps": ["Andere Leben durchspielen", "Herausfinden, was dich antreibt", "Kleine neue Gewohnheiten", "Dates mit dir selbst"],
+      "exercisePools": ["what_if", "self_date_plan", "new_things"],
+      "habitTemplates": ["water", "move_10min", "read_1page", "learn_5min"],
+      "recommendations": ["book_haig_bibliothek", "book_clear_habits"],
+      "workshops": ["p3_ikigai"],
+      "advance": { "minDays": 14, "minAvgMood": 6.0, "require": { "checkins": 8, "workshops": ["p3_ikigai"], "habitCompletions": 7, "selfDates": 1 } }
+    },
+    {
+      "id": 4,
+      "key": "gleichgewicht",
+      "title": "Wieder bei dir",
+      "subtitle": "Phase 4 · Gleichgewicht",
+      "emoji": "🌤️",
+      "landscape": "Aussichtshügel",
+      "humorLevel": 2,
+      "theme": { "bg": "#FFF0C9", "accent": "#D99A1E", "soft": "#FFF9E8" },
+      "description": "Du stehst wieder stabiler. Zeit, zurückzuschauen, was du geschafft hast – und bewusst abzuschließen.",
+      "helps": ["Den Weg anerkennen", "Dem früheren Ich schreiben", "Liebe neu denken", "Bewusst abschließen"],
+      "exercisePools": ["reflection", "letter", "gratitude", "closure"],
+      "habitTemplates": ["water", "move_10min", "gratitude_1", "read_1page"],
+      "recommendations": ["book_hooks_liebe"],
+      "workshops": [],
+      "advance": { "minDays": 7, "minAvgMood": 6.5, "require": { "checkins": 5, "pools": { "reflection": 1, "letter": 1 } } }
+    }
+  ],
+  "scoring": {
+    "base": { "lt2w": 1.0, "2w-2m": 2.0, "2m-6m": 3.0, "gt6m": 3.5 },
+    "who": { "them": -0.5, "unclear": -0.25, "me": 0, "mutual": 0 },
+    "contact": { "daily": -0.5, "often": -0.25, "rare": 0, "none": 0 },
+    "mood": [
+      { "max": 3, "add": -1.0 },
+      { "min": 7, "add": 0.5 }
+    ],
+    "phase4Requires": { "since": "gt6m", "minMood": 7 },
+    "forcePhase1AtOrBelowMood": 2
+  },
+  "protectMode": { "moodAtOrBelow": 2 },
+  "stepBack": { "window": 4, "hits": 3, "belowEntryBy": 2, "chip": "like_beginning" },
+  "snoozeDays": 5
+}

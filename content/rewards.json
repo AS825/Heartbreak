@@ -1,0 +1,21 @@
+{
+  "note": "Bedingungen zählen ausschließlich Aktivität und Fortschritt – nie die Stimmung.",
+  "milestones": [
+    { "id": "checkins_3", "when": { "checkinsTotal": 3 }, "title": "Drei Mal da gewesen", "text": "Drei Check-ins. Du bleibst dran – das ist nicht selbstverständlich.", "reward": "treat" },
+    { "id": "exercises_5", "when": { "exercisesTotal": 5 }, "title": "Fünf Übungen", "text": "Fünf kleine Schritte. Zusammen sind das schon eine ganz schöne Strecke.", "reward": "book" },
+    { "id": "checkins_7", "when": { "checkinsTotal": 7 }, "title": "Sieben Check-ins", "text": "Eine ganze Woche voller Ehrlichkeit mit dir selbst (Lücken inklusive – die zählen nicht).", "reward": "treat" },
+    { "id": "first_sprout", "when": { "habitStage": 1 }, "title": "Erster Keimling", "text": "Da wächst was! Dein erster Samen ist aufgegangen.", "reward": "treat" },
+    { "id": "first_bloom", "when": { "habitStage": 3 }, "title": "Erste Blüte", "text": "Deine erste Pflanze blüht. Genau so funktioniert das mit kleinen Gewohnheiten.", "reward": "self_date" },
+    { "id": "exercises_15", "when": { "exercisesTotal": 15 }, "title": "Fünfzehn Übungen", "text": "Fünfzehn Mal hast du dir Zeit für dich genommen.", "reward": "self_date" },
+    { "id": "phase_2", "when": { "event": "phase_enter:2" }, "title": "Neue Etappe: Regenwiese", "text": "Du bist einen Schritt weiter. Ab jetzt darf alles raus.", "reward": "book" },
+    { "id": "phase_3", "when": { "event": "phase_enter:3" }, "title": "Neue Etappe: Lichtung", "text": "Es wird heller. Zeit für neue Wege.", "reward": "book" },
+    { "id": "phase_4", "when": { "event": "phase_enter:4" }, "title": "Neue Etappe: Aussichtshügel", "text": "Schau mal runter. Das bist alles du gegangen.", "reward": "book" },
+    { "id": "ikigai_done", "when": { "event": "workshop_done:p3_ikigai" }, "title": "Kompass gebaut", "text": "Dein Ikigai steht. Daraus kann richtig was wachsen.", "reward": "self_date" },
+    { "id": "first_self_date", "when": { "selfDatesTotal": 1 }, "title": "Erstes Selbst-Date", "text": "Du warst mit dir aus. Wie war's? (Wir vermuten: gute Gesellschaft.)", "reward": "treat" }
+  ],
+  "rewardIntro": {
+    "book": "Eine Leseempfehlung für genau jetzt",
+    "treat": "Gönn dir was",
+    "self_date": "Vorschlag für ein Selbst-Date"
+  }
+}

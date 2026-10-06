@@ -1,0 +1,12 @@
+{
+  "region": "AT",
+  "title": "Du musst das nicht allein schaffen.",
+  "text": "Wenn es gerade zu viel ist, sprich mit jemandem. Anonym, kostenlos, rund um die Uhr.",
+  "contacts": [
+    { "id": "telefonseelsorge", "name": "TelefonSeelsorge", "number": "142", "tel": "142", "info": "Rund um die Uhr, kostenlos, anonym", "primary": true },
+    { "id": "rat_auf_draht", "name": "Rat auf Draht", "number": "147", "tel": "147", "info": "Für Kinder und Jugendliche, rund um die Uhr", "ageGroups": ["u20"] },
+    { "id": "notruf", "name": "Rettung (Notfall)", "number": "144", "tel": "144", "info": "Wenn du in akuter Gefahr bist" }
+  ],
+  "calmTitle": "Oder erstmal kurz atmen",
+  "calmExercise": "p1_breath_long_out"
+}

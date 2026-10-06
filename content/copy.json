@@ -1,0 +1,104 @@
+{
+  "greetings": {
+    "1": ["Hallo {{nickname}}. Schön, dass du da bist.", "Hey {{nickname}}. Ein Schritt nach dem anderen.", "Da bist du ja, {{nickname}}. Heute machen wir es ganz leicht."],
+    "2": ["Hey {{nickname}}! Was fühlst du heute alles gleichzeitig?", "Na, {{nickname}}? Bereit für ein bisschen Gefühls-Chaos?", "Servus {{nickname}}. Heute darf alles raus."],
+    "3": ["Hey {{nickname}}! Welches Leben probieren wir heute an?", "Servus {{nickname}}! Die Lichtung wartet.", "Da ist ja {{nickname}}, die/der Entdecker:in."],
+    "4": ["Hallo {{nickname}}. Schöne Aussicht heute, oder?", "Hey {{nickname}}. Schau mal, wie weit du gekommen bist.", "Servus {{nickname}}. Schön, dich so zu sehen."]
+  },
+  "restDayWelcome": ["Schön, dass du wieder da bist. Dein Garten hat auf dich gewartet. 🌱", "Willkommen zurück! Pausen gehören dazu – die Pflanzen haben einfach geruht."],
+  "checkin": {
+    "title": "Wie geht's dir heute?",
+    "moodLabels": {
+      "1": "Am Boden", "2": "Sehr schwer", "3": "Schwer", "4": "Eher mau", "5": "Geht so",
+      "6": "Okay", "7": "Ganz gut", "8": "Gut", "9": "Richtig gut", "10": "Überraschend super"
+    },
+    "moodEmojis": { "1": "😭", "2": "😢", "3": "😞", "4": "😕", "5": "😐", "6": "🙂", "7": "😊", "8": "😄", "9": "🤩", "10": "🥳" },
+    "chipsTitle": "Magst du noch etwas dazu sagen? (optional)",
+    "chips": [
+      { "id": "sad", "label": "Traurig", "emoji": "💧" },
+      { "id": "angry", "label": "Wütend", "emoji": "🔥" },
+      { "id": "lonely", "label": "Einsam", "emoji": "🌫️" },
+      { "id": "missing", "label": "Vermisse die Person", "emoji": "💭" },
+      { "id": "relieved", "label": "Erleichtert", "emoji": "🍃" },
+      { "id": "hopeful", "label": "Hoffnungsvoll", "emoji": "🌱" },
+      { "id": "contact", "label": "Hatte Kontakt mit Ex", "emoji": "📱", "effect": "after_contact" },
+      { "id": "like_beginning", "label": "Fühlt sich an wie am Anfang", "emoji": "🔄", "effect": "step_back" }
+    ],
+    "cta": "Einchecken",
+    "alreadyDone": "Für heute schon eingecheckt. Du kannst es aber ändern."
+  },
+  "checkinResponses": {
+    "1": {
+      "low": ["Danke, dass du trotzdem hier bist. Heute geht es nur ums Durchkommen – und das schaffst du.", "Das klingt wirklich schwer. Wir machen heute nur das Allernötigste, zusammen."],
+      "mid": ["Okay. Ein Tag nach dem anderen. Du machst das gut.", "Danke fürs Einchecken. Ein kleiner Schritt reicht heute."],
+      "high": ["Oh, ein etwas leichterer Moment. Halt ihn ruhig ein bisschen fest.", "Schön, das zu hören. Gönn dir diesen Moment."]
+    },
+    "2": {
+      "low": ["Heute zieht es dich runter. Das gehört dazu, auch wenn es sich nicht so anfühlt.", "Schwerer Tag. Du musst ihn nicht schön finden – nur durch."],
+      "mid": ["Irgendwo zwischen Wut, Trauer und Eis aus der Packung? Klingt nach Phase 2.", "Geht so ist auch ein Zustand. Ein ehrlicher sogar."],
+      "high": ["Ein guter Tag mitten im Gefühlschaos! Den nehmen wir mit.", "Schau an. Da kommt was zurück, oder?"]
+    },
+    "3": {
+      "low": ["Rückschläge gehören zum Weg. Du hast trotzdem schon so viel geschafft.", "Heute ist es wieder schwerer. Das löscht nichts von deinem Fortschritt."],
+      "mid": ["Solide. Neue Wege sind manchmal einfach ein bisschen holprig.", "Okay-Tage sind die Baustellen, auf denen Neues entsteht."],
+      "high": ["Schöne Aussichten! Welches neue Abenteuer probieren wir heute?", "Du klingst nach jemandem, der gerade wieder Lust aufs Leben bekommt."]
+    },
+    "4": {
+      "low": ["Auch auf dem Hügel gibt's Nebel. Das ist kein Rückschritt, nur Wetter.", "Ein schwerer Tag. Schau ruhig mal zurück, was du schon alles getragen hast."],
+      "mid": ["Gleichgewicht heißt nicht, dass jeder Tag super ist. Nur, dass du wieder stehst.", "Ruhiger Tag. Auch schön."],
+      "high": ["Das klingt richtig gut. Du hast dir das verdient.", "Schau dich an! Wer hätte das vor ein paar Wochen gedacht?"]
+    }
+  },
+  "protectMode": {
+    "title": "Heute im Schutzmodus",
+    "text": "Heute machen wir nur ganz sanfte Sachen. Und wenn es zu viel wird: Hilfe ist nur einen Tipp entfernt.",
+    "helpCta": "Mit jemandem reden"
+  },
+  "suggestions": {
+    "advance": {
+      "title": "Bereit für den nächsten Schritt?",
+      "text": "In letzter Zeit wirkt es, als würde es dir ein Stück besser gehen. Magst du weiter zur nächsten Etappe: {{phaseTitle}}?",
+      "yes": "Ja, fühlt sich richtig an",
+      "no": "Lieber noch bleiben"
+    },
+    "step_back": {
+      "title": "Einen Gang runterschalten?",
+      "text": "Die letzten Tage waren schwerer. Magst du für eine Weile zurück zu „{{phaseTitle}}“? Dein Garten und alles, was du gesammelt hast, bleibt genau da, wo es ist.",
+      "yes": "Ja, das tut mir gut",
+      "no": "Nein, ich bleib hier"
+    },
+    "complete": {
+      "title": "Zeit für den Abschluss?",
+      "text": "Du hast zurückgeschaut, deinem früheren Ich geschrieben und stehst wieder stabil. Magst du deinen Weg bewusst abschließen?",
+      "yes": "Ja, lass uns abschließen",
+      "no": "Noch nicht"
+    }
+  },
+  "stepBackDone": "Wege sind selten gerade. Wir machen es uns hier eine Weile gemütlich.",
+  "today": {
+    "checkinCard": "Wie geht's dir heute?",
+    "checkinDone": "Eingecheckt",
+    "exerciseTitle": "Deine Mini-Übung",
+    "exerciseDone": "Übung für heute erledigt ✓",
+    "otherExercise": "Andere Übung",
+    "habitsTitle": "Deine Gewohnheiten",
+    "noHabits": "Noch keine Gewohnheiten. Pflanz eine im Garten!",
+    "gardenTitle": "Dein Garten",
+    "doneForToday": ["Für heute reicht das. Wirklich. 💛", "Alles erledigt. Leg dich hin, du Held:in.", "Fertig für heute. Den Rest des Tages darfst du einfach sein."]
+  },
+  "exercise": {
+    "start": "Los geht's",
+    "skip": "Heute nicht",
+    "done": "Fertig",
+    "save": "Speichern",
+    "back": "Zurück zu heute"
+  },
+  "abschluss": {
+    "title": "Du hast es geschafft.",
+    "lines": [
+      "Nicht weil der Schmerz einfach weg ist, sondern weil du gelernt hast, gut mit dir umzugehen.",
+      "Dein Garten bleibt. Komm vorbei, wann immer du magst."
+    ],
+    "cta": "In meinen Garten"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "affiliateNote": "Affiliate-Links sind im Draft Platzhalter.",
+  "items": [
+    {
+      "id": "book_wolf_partner_geht",
+      "kind": "book",
+      "phases": [1],
+      "title": "Wenn der Partner geht",
+      "author": "Doris Wolf",
+      "emoji": "📘",
+      "text": "Für die ersten Wochen: ein ruhiger Begleiter, der erklärt, was gerade in dir passiert – ohne zu drängen.",
+      "affiliateUrl": "#affiliate-placeholder"
+    },
+    {
+      "id": "book_stahl_kind",
+      "kind": "book",
+      "phases": [2],
+      "title": "Das Kind in dir muss Heimat finden",
+      "author": "Stefanie Stahl",
+      "emoji": "📙",
+      "text": "Wenn du merkst, dass der Schmerz älter ist als die Beziehung: ein Blick auf die Prägungen, die wir alle mitschleppen.",
+      "affiliateUrl": "#affiliate-placeholder"
+    },
+    {
+      "id": "book_hornby_hifi",
+      "kind": "book",
+      "phases": [2],
+      "title": "High Fidelity",
+      "author": "Nick Hornby",
+      "emoji": "💿",
+      "text": "Ein Roman über Herzschmerz, Plattenläden und Top-5-Listen. Lustig, ehrlich und ziemlich tröstlich.",
+      "affiliateUrl": "#affiliate-placeholder"
+    },
+    {
+      "id": "book_haig_bibliothek",
+      "kind": "book",
+      "phases": [3],
+      "title": "Die Mitternachtsbibliothek",
+      "author": "Matt Haig",
+      "emoji": "📚",
+      "text": "Ein Roman über all die Leben, die wir hätten führen können – und warum das eigene vielleicht doch das spannendste ist.",
+      "affiliateUrl": "#affiliate-placeholder"
+    },
+    {
+      "id": "book_clear_habits",
+      "kind": "book",
+      "phases": [3],
+      "title": "Die 1%-Methode (Atomic Habits)",
+      "author": "James Clear",
+      "emoji": "📗",
+      "text": "Wenn dich die Gewohnheits-Werkstatt gepackt hat: das Buch zum Prinzip „klein anfangen, dranbleiben“.",
+      "affiliateUrl": "#affiliate-placeholder"
+    },
+    {
+      "id": "book_hooks_liebe",
+      "kind": "book",
+      "phases": [4],
+      "title": "Alles über Liebe",
+      "author": "bell hooks",
+      "emoji": "📕",
+      "text": "Für den Abschluss: ein kluges Buch darüber, was Liebe eigentlich ist – und was nicht.",
+      "affiliateUrl": "#affiliate-placeholder"
+    },
+
+    { "id": "treat_chocolate", "kind": "treat", "phases": [1, 2, 3, 4], "emoji": "🍫", "title": "Richtig gute Schokolade", "text": "Nicht die aus dem Automaten. Die, bei der man das Papier ganz langsam aufmacht.", "affiliateUrl": "#affiliate-placeholder" },
+    { "id": "treat_bath", "kind": "treat", "phases": [1, 2, 3, 4], "emoji": "🛁", "title": "Ein heißes Bad oder eine lange Dusche", "text": "Mit Musik. Mit Kerze. Mit allem, was du willst. Niemand hämmert an die Tür." },
+    { "id": "treat_flowers", "kind": "treat", "phases": [2, 3, 4], "emoji": "💐", "title": "Blumen für dich", "text": "Kauf dir einen Strauß. Einfach so. Weil du es kannst.", "affiliateUrl": "#affiliate-placeholder" },
+    { "id": "treat_breakfast", "kind": "treat", "phases": [1, 2, 3, 4], "emoji": "🥐", "title": "Frühstück wie im Hotel", "text": "Gutes Gebäck, frischer Saft, Tisch schön decken. Für eine Person. Die beste Person." },
+    { "id": "treat_cozy", "kind": "treat", "phases": [1, 2], "emoji": "🧦", "title": "Kuschelsocken-Upgrade", "text": "Die flauschigsten Socken der Welt. Gefühlt ein Ganzkörper-Hug.", "affiliateUrl": "#affiliate-placeholder" },
+
+    { "id": "date_museum", "kind": "self_date", "phases": [3, 4], "emoji": "🖼️", "title": "Allein ins Museum", "text": "Du bestimmst das Tempo. Niemand will zu früh in den Shop. Außer du." },
+    { "id": "date_cinema", "kind": "self_date", "phases": [3, 4], "emoji": "🎬", "title": "Kino für eine Person", "text": "Bester Platz, eigenes Popcorn, und keine Diskussion über die Filmwahl." },
+    { "id": "date_cafe", "kind": "self_date", "phases": [2, 3, 4], "emoji": "☕", "title": "Kaffeehaus-Nachmittag", "text": "Melange, Zeitung, Zeit. Sehr wienerisch, sehr gut." },
+    { "id": "date_hike", "kind": "self_date", "phases": [3, 4], "emoji": "🥾", "title": "Wanderung mit Jause", "text": "Einen Berg, einen Hügel oder zumindest eine Anhöhe – oben wartet ein Brot." },
+    { "id": "date_cook", "kind": "self_date", "phases": [3, 4], "emoji": "🍝", "title": "Dinner for one", "text": "Koch etwas Aufwendiges. Deck den Tisch. Zünde eine Kerze an. Du bist es wert." },
+    { "id": "date_concert", "kind": "self_date", "phases": [3, 4], "ageGroups": ["u20", "20-29", "30-39"], "emoji": "🎸", "title": "Allein auf ein Konzert", "text": "Niemand stört, wenn du jedes Wort mitsingst." },
+    { "id": "date_thermal", "kind": "self_date", "phases": [3, 4], "ageGroups": ["30-39", "40-54", "55+"], "emoji": "♨️", "title": "Thermen-Tag", "text": "Wasser, Wärme, Ruhe. Und danach ein Nickerchen auf der Liege." },
+    { "id": "date_market", "kind": "self_date", "phases": [3, 4], "emoji": "🧺", "title": "Bummeln am Markt", "text": "Probier dich durch. Kauf etwas, das du noch nie gegessen hast." }
+  ]
+}

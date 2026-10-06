@@ -1,0 +1,45 @@
+{
+  "growth": {
+    "thresholds": [0, 3, 8, 15],
+    "stageNames": ["Samen", "Keimling", "Pflänzchen", "Blüte"],
+    "stageEmojis": ["🌰", "🌱", "🌿"],
+    "restingLabel": "ruht in der Erde"
+  },
+  "plants": {
+    "sunflower": { "name": "Sonnenblume", "bloom": "🌻" },
+    "tulip": { "name": "Tulpe", "bloom": "🌷" },
+    "daisy": { "name": "Gänseblümchen", "bloom": "🌼" },
+    "blossom": { "name": "Kirschblüte", "bloom": "🌸" },
+    "hibiscus": { "name": "Hibiskus", "bloom": "🌺" },
+    "lavender": { "name": "Lavendel", "bloom": "🪻" },
+    "rose": { "name": "Rose", "bloom": "🌹" },
+    "cactus": { "name": "Kaktus", "bloom": "🌵" }
+  },
+  "templates": [
+    { "id": "water", "title": "Ein Glas Wasser", "emoji": "💧", "plant": "daisy", "cue": "Gleich nach dem Aufstehen" },
+    { "id": "outside_5min", "title": "5 Minuten raus", "emoji": "🚶", "plant": "sunflower", "cue": "Einmal am Tag vor die Tür" },
+    { "id": "sleep_time", "title": "Handy weg vorm Schlafen", "emoji": "🌙", "plant": "lavender", "cue": "30 Minuten vor dem Schlafen" },
+    { "id": "eat_warm", "title": "Eine warme Mahlzeit", "emoji": "🍲", "plant": "tulip", "cue": "Mittags oder abends" },
+    { "id": "move_10min", "title": "10 Minuten Bewegung", "emoji": "🏃", "plant": "sunflower", "cue": "Spaziergang, Tanzen, Dehnen – egal" },
+    { "id": "message_friend", "title": "Jemandem schreiben", "emoji": "💌", "plant": "blossom", "cue": "Eine Nachricht an jemanden, der dir guttut" },
+    { "id": "read_1page", "title": "Eine Seite lesen", "emoji": "📖", "plant": "rose", "cue": "Vor dem Einschlafen" },
+    { "id": "learn_5min", "title": "5 Minuten was Neues lernen", "emoji": "🧠", "plant": "hibiscus", "cue": "Sprache, Instrument, Kochrezept" },
+    { "id": "gratitude_1", "title": "Eine Sache, die heute schön war", "emoji": "✨", "plant": "blossom", "cue": "Abends kurz notieren" }
+  ],
+  "designer": {
+    "intro": "Gute Gewohnheiten sind offensichtlich, attraktiv, einfach und befriedigend. Wir gehen das in vier Mini-Schritten durch.",
+    "titleStep": {
+      "prompt": "Was willst du regelmäßig tun?",
+      "placeholder": "z. B. Gitarre spielen",
+      "fromIkigai": "Ideen aus deinem Kompass:"
+    },
+    "steps": [
+      { "key": "obvious", "label": "Offensichtlich", "emoji": "👀", "prompt": "Woran erinnerst du dich? Wann und wo genau?", "example": "Nach dem Morgenkaffee, am Küchentisch" },
+      { "key": "attractive", "label": "Attraktiv", "emoji": "✨", "prompt": "Womit verbindest du es, damit du richtig Lust drauf hast?", "example": "Nur dabei gibt's meinen Lieblingspodcast" },
+      { "key": "easy", "label": "Einfach", "emoji": "🪶", "prompt": "Was ist die 2-Minuten-Version davon?", "example": "Die Gitarre nur in die Hand nehmen und einen Akkord spielen" },
+      { "key": "satisfying", "label": "Befriedigend", "emoji": "🎉", "prompt": "Wie feierst du es danach?", "example": "Abhaken und zusehen, wie die Pflanze wächst" }
+    ],
+    "plantPrompt": "Welche Pflanze soll dafür wachsen?"
+  },
+  "decorations": ["🪑", "🏮", "🦋", "🐝", "⛲", "🐞", "🍄", "🪺"]
+}

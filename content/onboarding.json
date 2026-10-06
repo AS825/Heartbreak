@@ -1,0 +1,128 @@
+{
+  "intro": {
+    "title": "Hey du. 💛",
+    "lines": [
+      "Liebeskummer ist mies. Wirklich mies.",
+      "Wir begleiten dich da durch – in kleinen Schritten, ohne Druck und mit gelegentlich schlechten Witzen.",
+      "Zuerst ein paar Fragen, damit wir wissen, wo du gerade stehst."
+    ],
+    "cta": "Okay, los geht's"
+  },
+  "questions": [
+    {
+      "id": "nickname",
+      "kind": "text",
+      "title": "Wie dürfen wir dich nennen?",
+      "hint": "Ein Spitzname reicht völlig.",
+      "placeholder": "z. B. Sonnenschein",
+      "reactions": { "default": "Schön, dich kennenzulernen, {{nickname}}." }
+    },
+    {
+      "id": "ageGroup",
+      "kind": "single",
+      "title": "Wie alt bist du ungefähr?",
+      "hint": "Nur damit unsere Vorschläge zu dir passen.",
+      "options": [
+        { "id": "u20", "label": "unter 20", "emoji": "🧃" },
+        { "id": "20-29", "label": "20–29", "emoji": "🎧" },
+        { "id": "30-39", "label": "30–39", "emoji": "☕" },
+        { "id": "40-54", "label": "40–54", "emoji": "🍷" },
+        { "id": "55+", "label": "55+", "emoji": "🌿" }
+      ],
+      "reactions": { "default": "Notiert. Herzschmerz kennt kein Alter – leider." }
+    },
+    {
+      "id": "since",
+      "kind": "single",
+      "title": "Wie lange ist die Trennung her?",
+      "options": [
+        { "id": "lt2w", "label": "Weniger als 2 Wochen", "emoji": "🌧️" },
+        { "id": "2w-2m", "label": "2 Wochen bis 2 Monate", "emoji": "🌦️" },
+        { "id": "2m-6m", "label": "2 bis 6 Monate", "emoji": "⛅" },
+        { "id": "gt6m", "label": "Mehr als 6 Monate", "emoji": "🌤️" }
+      ],
+      "reactions": {
+        "lt2w": "Das ist ganz frisch. Gut, dass du hier bist.",
+        "2w-2m": "Die erste Welle ist vorbei – und trotzdem kommt sie manchmal zurück, oder?",
+        "2m-6m": "Du bist schon ein Stück gegangen. Respekt.",
+        "gt6m": "Manches braucht einfach länger. Das ist völlig okay."
+      }
+    },
+    {
+      "id": "who",
+      "kind": "single",
+      "title": "Wer hat sich getrennt?",
+      "options": [
+        { "id": "them", "label": "Die andere Person", "emoji": "🚪" },
+        { "id": "me", "label": "Ich", "emoji": "🧳" },
+        { "id": "mutual", "label": "Wir beide", "emoji": "🤝" },
+        { "id": "unclear", "label": "Schwer zu sagen", "emoji": "🌀" }
+      ],
+      "reactions": {
+        "them": "Verlassen zu werden tut auf eine ganz eigene Art weh.",
+        "me": "Auch wer geht, darf traurig sein. Sehr sogar.",
+        "mutual": "Gemeinsam entschieden – und trotzdem allein damit. Kennen wir.",
+        "unclear": "Es ist kompliziert. Ist es meistens."
+      }
+    },
+    {
+      "id": "contact",
+      "kind": "single",
+      "title": "Habt ihr noch Kontakt?",
+      "options": [
+        { "id": "none", "label": "Gar nicht", "emoji": "🔕" },
+        { "id": "rare", "label": "Selten", "emoji": "📭" },
+        { "id": "often", "label": "Öfter", "emoji": "📬" },
+        { "id": "daily", "label": "Fast täglich", "emoji": "📱" }
+      ],
+      "reactions": {
+        "none": "Funkstille. Das kann schwer sein – und gleichzeitig gut.",
+        "rare": "Ab und zu. Wir behalten das im Blick.",
+        "often": "Das macht's nicht leichter, oder? Wir sind da.",
+        "daily": "Täglicher Kontakt ist echt viel. Wir nehmen das mit rein."
+      }
+    },
+    {
+      "id": "mood",
+      "kind": "slider",
+      "title": "Wie geht's dir heute, ganz ehrlich?",
+      "hint": "1 = gar nicht gut, 10 = überraschend gut",
+      "min": 1,
+      "max": 10,
+      "sliderReactions": [
+        { "max": 2, "text": "Danke, dass du so ehrlich bist. Wir machen heute nur das Nötigste – gemeinsam." },
+        { "max": 4, "text": "Kein guter Tag. Dann fangen wir ganz klein an." },
+        { "max": 6, "text": "Irgendwo dazwischen. Ein solider Anfang." },
+        { "max": 10, "text": "Oh, das freut uns! Wir halten das fest." }
+      ]
+    },
+    {
+      "id": "joys",
+      "kind": "multi",
+      "title": "Was hat dir früher Freude gemacht?",
+      "hint": "Alles, was dir einfällt. Auch Kleinkram.",
+      "allowCustom": true,
+      "customPlaceholder": "Etwas anderes …",
+      "options": [
+        { "id": "music", "label": "Musik", "emoji": "🎶" },
+        { "id": "reading", "label": "Lesen", "emoji": "📚" },
+        { "id": "nature", "label": "Natur", "emoji": "🌲" },
+        { "id": "sport", "label": "Sport", "emoji": "🏃" },
+        { "id": "cooking", "label": "Kochen", "emoji": "🍝" },
+        { "id": "friends", "label": "Freund:innen", "emoji": "👯" },
+        { "id": "art", "label": "Kreatives", "emoji": "🎨" },
+        { "id": "travel", "label": "Reisen", "emoji": "🧭" },
+        { "id": "games", "label": "Spiele", "emoji": "🎲" },
+        { "id": "animals", "label": "Tiere", "emoji": "🐕" }
+      ],
+      "reactions": { "default": "Merken wir uns. Das wird noch wichtig." }
+    }
+  ],
+  "reveal": {
+    "title": "Hier stehst du gerade",
+    "disclaimer": "Das ist kein Urteil, nur ein Startpunkt. Du kannst dich jederzeit frei bewegen.",
+    "habitsTitle": "Such dir 1–2 kleine Gewohnheiten aus",
+    "habitsHint": "Jede wird eine Pflanze in deinem Garten.",
+    "cta": "Ab in den Garten"
+  }
+}
